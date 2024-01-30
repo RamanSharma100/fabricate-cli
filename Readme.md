@@ -1,6 +1,6 @@
-# Forge CLI
+# Fabricate CLI
 
-Forge CLI is a Library to create NodeJS CLI applications with ease and
+Fabricate CLI is a Library to create NodeJS CLI applications with ease and
 maintainable code.
 
 ## Installation
@@ -10,7 +10,7 @@ Release coming soon on NPM.
 ## Usage
 
 ```typescript
-import CLI, { Command, type CommandOption } from 'forge-cli';
+import CLI, { Command, type CommandOption } from 'fabricate-cli';
 
 const cli = new CLI('forge', 'A CLI tool for creating servers');
 
@@ -81,7 +81,7 @@ aware that there may be bugs and missing features.
 ## Release History
 
 - 1.0.0
-  - Work in progress
+  - Level 0 is complete
 
 ## Contact
 

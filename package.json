@@ -1,18 +1,26 @@
 {
-  "name": "forge-cli",
+  "name": "fabricate-cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "examples/index.js",
+  "description": "A Library to create CLI's with ease",
+  "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "npx tsc",
     "dev": "node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm examples/index.ts "
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cli",
+    "forge",
+    "forge-cli"
+  ],
+  "author": "Raman Sharma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RamanSharma100/fabricate-cli.git"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.10",
-    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
   "dependencies": {
