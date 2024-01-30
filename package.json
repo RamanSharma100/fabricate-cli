@@ -2,7 +2,8 @@
   "name": "fabricate-cli",
   "version": "1.0.0",
   "description": "A Library to create CLI's with ease",
-  "main": "index.js",
+  "types": "lib/*.d.ts",
+  "main": "lib/index.js",
   "type": "module",
   "scripts": {
     "build": "npx tsc",
