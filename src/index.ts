@@ -1,6 +1,5 @@
 import CLI from './CLI';
-import { Command, CommandOption } from './Command';
+import { CommandOption, Command } from './Command';
+export { CLI, Command, CommandOption };
 
-exports.default = CLI;
-
-export { Command, type CommandOption };
+export default CLI;

@@ -1,6 +1,6 @@
 import chalk from 'chalk';
 import boxen from 'boxen';
-import { Command, CommandOption } from './Command';
+import { Command, type CommandOption } from './Command';
 
 class CLI {
 	private commands: Command[] = [];
@@ -46,7 +46,9 @@ class CLI {
 		args.forEach((arg, index) => {
 			const param = params[index];
 			if (!param && arg.value === 'required') {
-				return console.log(`Argument ${arg.name} is required`);
+				console.log(`Argument ${arg.name} is required`);
+
+				process.exit();
 			}
 			argsMap[arg.name] = param;
 		});

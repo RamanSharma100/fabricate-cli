@@ -41,7 +41,7 @@ class CreateServerCommand extends Command {
 		);
 	}
 
-	async execute(args: CommandOption[], options: CommandOption[]) { 
+	async execute(args: CommandOption[], options: CommandOption[]) {
 		console.log('Creating server...');
 	}
 }
@@ -74,6 +74,7 @@ If you like this project, please give it a star ⭐️.
 - [ ] Add more documentation
 - [ ] Add more examples
 - [ ] Add more features
+- [x] Reduce File Size (Current: 111 KB)
 
 ## Project Status
 
@@ -84,6 +85,8 @@ aware that there may be bugs and missing features.
 
 - 0.1.0
   - Level 0 is complete
+- 0.2.0
+  - Default export is now CLI class
 
 ## Contact
 

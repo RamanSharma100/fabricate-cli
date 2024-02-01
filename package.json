@@ -1,16 +1,18 @@
 {
   "name": "fabricate-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Library to create CLI's with ease",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "build": "rollup -c",
+    "build": "tsup",
     "dev": "node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm examples/index.ts "
   },
   "files": [
-    "dist"
+    "dist/**/*",
+    "README.md"
   ],
   "keywords": [
     "cli",
@@ -25,13 +27,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.11.10",
-    "rollup-plugin-dts": "^6.1.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "tslib": "^2.6.2",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "peerDependencies": {
@@ -58,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
