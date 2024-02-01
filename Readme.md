@@ -5,7 +5,7 @@ maintainable code.
 
 ## Installation
 
-Release coming soon on NPM.
+[Release coming soon on NPM.](https://www.npmjs.com/package/fabricate-cli)
 
 ## Usage
 
@@ -17,29 +17,31 @@ const cli = new CLI('forge', 'A CLI tool for creating servers');
 class CreateServerCommand extends Command {
 	constructor() {
 		super(
-			'create',
-			'Create a new server',
-			'c',
+			'create', // command name
+			'Create a new server', // command description
+			'c', // command shortcut
+			// arguments for command
 			[
 				{
 					name: 'name',
 					description: 'The name of the server',
 					shortcut: 'n',
-					value: 'required',
+					value: 'required', // argument value required or not
 				},
 			],
+			// options for command
 			[
 				{
 					name: 'version',
 					description: 'The version of the server',
 					shortcut: 'v',
-					value: 'required',
+					value: 'required', // option value required or not
 				},
 			]
 		);
 	}
 
-	async execute(args: CommandOption[], options: CommandOption[]) {
+	async execute(args: CommandOption[], options: CommandOption[]) { 
 		console.log('Creating server...');
 	}
 }
