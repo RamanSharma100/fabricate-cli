@@ -5,7 +5,7 @@ maintainable code.
 
 ## Installation
 
-[Release coming soon on NPM.](https://www.npmjs.com/package/fabricate-cli)
+[Release on NPM.](https://www.npmjs.com/package/fabricate-cli)
 
 ## Usage
 
