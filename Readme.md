@@ -80,7 +80,7 @@ aware that there may be bugs and missing features.
 
 ## Release History
 
-- 1.0.0
+- 0.1.0
   - Level 0 is complete
 
 ## Contact
